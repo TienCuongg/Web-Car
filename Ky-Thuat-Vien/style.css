@@ -1,0 +1,262 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* m-0 tương đương với 0 pixel.
+m-1 tương đương với 4 pixel (0.25 rem x 16px).
+m-2 tương đương với 8 pixel (0.5 rem x 16px).
+m-3 tương đương với 16 pixel (1 rem x 16px).
+m-4 tương đương với 24 pixel (1.5 rem x 16px).
+m-5 tương đương với 48 pixel (3 rem x 16px). */
+:root {
+    --primary: #D81324;
+    --secondary: #0B2154;
+    --light: #F2F2F2;
+    --dark: #111111;
+    --text: #596277;
+}
+
+#wrapper {
+    width: 1705.3px;
+    margin: 0px auto;
+}
+
+
+
+/* header */
+
+#header {
+
+    width: 1705.3px;
+    height: 53px;
+    display: flex;
+    background: #F2F2F2;
+    position: relative;
+}
+
+#header #header-left {
+    float: left;
+    display: inline-flex;
+    padding-left: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+#header span {
+    font-weight: 400;
+    color: var(--text);
+}
+
+#header .map {
+    margin-right: 24px;
+}
+
+#header #header-right {
+    height: 53px;
+    float: right;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 48px;
+    top: 0px;
+}
+
+#header-right .app {
+    display: flex;
+
+}
+
+#header-right .app li {
+    list-style: none;
+
+}
+
+#header #phone {
+    margin: 24px;
+}
+
+/* end header */
+
+/* menu */
+#container {
+    position: absolute;
+    position: fixed;
+    width: 1705.3px;
+    display: flex;
+    height: 75px;
+    background: #ffffff;
+    top: 53px;
+    /* left: 0px; */
+    z-index: 10000;
+    margin-right: 0px;
+
+}
+
+#container.hidden {
+    overflow: hidden;
+
+}
+
+#container #logo {
+    display: flex;
+    margin-left: 55px;
+    padding-top: 20px;
+}
+
+#container #logo img {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+
+}
+
+#container #title {
+
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--primary);
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#container #main-menu {
+
+    display: flex;
+    padding-top: 30px;
+    position: absolute;
+    right: 231px;
+}
+
+#container #main-menu li {
+    list-style: none;
+    width: 100px;
+    height: auto;
+    margin: 0px 10px;
+}
+
+#container #main-menu a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+
+}
+
+#container #main-menu a:hover {
+    color: var(--primary);
+}
+
+#container #more-menu-buy {
+    background: var(--primary);
+    width: 231px;
+    height: 75px;
+    position: absolute;
+    right: 0px;
+
+}
+
+#container #more-menu-buy a {
+    display: block;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    padding-top: 30px;
+
+    text-align: center;
+
+}
+
+#container #more-menu-buy:hover {
+    background: #b10d1b;
+
+}
+
+#booking {
+    position: relative;
+}
+
+#booking #menu-child {
+    position: absolute;
+    display: block;
+    background: #ffffff;
+    width: 160px;
+    height: 144px;
+    z-index: 1000;
+    top: 45px;
+
+}
+
+#booking #menu-child li {
+    width: 160px;
+    margin-left: 0px;
+
+}
+
+#booking #menu-child a {
+    display: block;
+    padding: 5px 10px 5px;
+
+}
+
+#booking #menu-child a:hover {
+    background: var(--light);
+}
+
+/* end menu */
+
+/* star technicians */
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #596277;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.content-technician {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/technicians.png") center center no-repeat;
+    height: 288.8px;
+    width: 1705.3px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 17px;
+
+}
+
+.content-technician ol {
+   display: flex;
+   list-style: none;
+   /* padding: 10px; */
+}
+
+.content-technician span {
+    padding: 12px;
+}
+.content-technician a {
+    text-decoration: none;
+}
+.content-technician h1 {
+    color: #fff;
+}
+.content-technician .red-content {
+    color: #D81324;
+}
+
+.menu-item a {
+    color: #fff;
+}
